@@ -1,0 +1,162 @@
+body{
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+/*sometimes we select the font but it works for windows only, so in that case website is not able to render the content properly, so we will add extra code so it becomes readable*/
+}
+h1{
+  color: #66BFBF;
+  margin: 50px auto 0 auto;
+  font-size: 5.625rem;/*==90px, 16px=100%=1em,root em(rem)is used nowadays, we use rem bcoz it is not affected by its parent(if we have wriiten font size20px in body then the h1 will be further increased by 20 px bcoz it is his parent)don't use em,%or px bcoz they depend on body or parent element*/
+  /*width: 10%;
+  margin: 0 auto 0 auto;*/
+  font-family: 'Sacramento', cursive;
+}
+h2{
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;/*40 px=40/16rem*/
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+h3{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+p{
+  line-height: 2;
+}
+hr{
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+ width: 10%;
+ margin:100px auto 100px auto;
+}
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 10px 20px;
+  text-decoration: none;
+}
+a:hover{
+  color: #EAF6F6;
+}
+.skill-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;/*this will overrule the body design of center text align. if we remove this everything of skills will be centered*/
+}
+.computerImage{
+  width: 25%;
+  float: left;/*imp property to move the image float around text, float and clear difference asked in interviews. in order to make sure that no one can wrap around some element so we use clear property in order to get everything clear*/
+  margin-right: 30px;
+}
+.chilliImage{
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+.bottom-cloud{
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+.top-cloud{
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+.top-container{
+    background-color: #E4F9F5;
+    /*width: 200px;
+    height: 200px;
+    border: solid 10px;
+    padding: 20px;*/
+    position: relative;
+    padding-top: 100px;
+}
+.middle-container{
+  margin-left: 100px 0;
+}
+.bottom-container{
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+  margin-top: 100px;
+}
+.KuldeepPic{
+  width: 20%;
+  margin-top: 50px;
+}
+.intro{
+  width: 30%;
+  margin: auto;
+}
+.contact-msg{
+  width: 40%;
+  margin: 40px auto 60px;
+}
+.copyright{
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding-left: 20px 0;
+}
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999E);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999E);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999E);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999E);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999E);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+/*copied the whole code from css button generator website after putting the desired colour and hovering condition, use website css3buttpngenerator.com*/
+.btn:hover {
+  background: #30E3cb;
+  background-image: -webkit-linear-gradient(top, #30E3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30E3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30E3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30E3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30E3cb, #2bc4ad);
+  text-decoration: none;
+}
+/*
+.middle-container{
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  border: solid 20px;
+  margin-left: 260px;
+}
+.bottom-container{
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  border: solid 10px;
+  margin-left: 500px;
+}*/
+/*Study about css box model,very imp interview ques, chrome developer tools mein use hota
+ border vs padding vs margin
+ block vs inline displays
+ block elements(takes full width space) paragraphs,headers.divs,list and list items,forms etc
+ inline elements(takes only limited space) span,images,anchors(contact and hobbies link)
+ inline-block elements(can change width and also other element can be taken inline ),we can make diff shaped boxes in one line using this
+ */
+/*CSS Positioning
+before positioning html has its own positioning system
+supppose you are given word programmer with blue bg but you are asked to make bg color of pro only to red, u can mke it using span tag
+static- all html elements are static by default,the way we see now website
+relative-adding a margin relative to the image where it should have been egimg{position:relative; left:30px;},give the image 30 px margin than its original place, whn we do this.it will not affect the position of other elements,the element can move onto the top of other element and hide that also
+absolute-adding a margin to its parent tag,we can move the element anywhere in between its parent or if parent not given, we become relative to the body(screen)
+fixed-website ads,fix hi rehti h when we scroll through the webpage,eg navbar is fixed mainly*/
+/*Some very good web pages code are easily available on bootstrap examples on net,official website
+why bootsstrap?
+wireframing- sample idea/image of the website
+see websites like uipatterns for reference and codes, carousel wala sexy h bhai , see dribble website also, color select krke theme apne aap dikha deti h yeh,balsamiq cloud for sketching*/
